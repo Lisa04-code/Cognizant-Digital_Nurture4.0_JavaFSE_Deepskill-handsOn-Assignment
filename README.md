@@ -1,1 +1,1 @@
-# Cognizant-Digital_Nurture4.0_JavaFSE_Deepskill-handsOn-Assignment
+mandatory handsOn Exercise Assignment on JavaFSE Deepskill
