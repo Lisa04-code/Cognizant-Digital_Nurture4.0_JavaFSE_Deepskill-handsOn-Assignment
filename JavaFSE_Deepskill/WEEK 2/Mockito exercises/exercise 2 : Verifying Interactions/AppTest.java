@@ -1,16 +1,14 @@
-package com.example1.Mockito1;  // Fixed typo in package name (MockItol → Mockito1)
+package com.example1.Mockito1;  
 
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit tests for simple App
- */
+
 public class AppTest {
 
     @BeforeAll
     static void initAll() {
-        // Initialization code here (runs once before all tests)
+        
     }
 
     @BeforeEach
@@ -38,6 +36,6 @@ public class AppTest {
 
     @AfterAll
     static void tearDownAll() {
-        // Final cleanup code here (runs once after all tests)
+        
     }
 }
