@@ -6,7 +6,7 @@ public class ExternalApi {
     }
 
     public boolean saveData(String data) {
-        // Simulate saving to external system
+        
         return data != null;
     }
 }
