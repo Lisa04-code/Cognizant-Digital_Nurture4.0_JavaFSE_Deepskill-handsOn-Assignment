@@ -7,7 +7,7 @@ import com.cognizant.springlearn.model.Country;
 @RestController
 public class CountryController {
     
-    @GetMapping("/country")  // Fixed: Removed stray quote (")
+    @GetMapping("/country")  
     public Country getCountryIndia() {
         return new Country("IN", "India");
     }
