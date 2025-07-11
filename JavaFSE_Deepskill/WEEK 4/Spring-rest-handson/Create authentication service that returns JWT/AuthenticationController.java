@@ -22,12 +22,12 @@ public class AuthenticationController {
 
     @PostMapping
     public ResponseEntity<?> createToken(String authorization) {
-        // Extract credentials from Basic Auth header
+        
         String base64Credentials = authorization.substring("Basic ".length());
         String credentials = new String(Base64.getDecoder().decode(base64Credentials));
         String[] values = credentials.split(":", 2);
         
-        // Create UserDetails (in real app, validate against database)
+        
         UserDetails userDetails = User.withUsername(values[0])
             .password(values[1])
             .roles("USER")
