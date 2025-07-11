@@ -1,5 +1,2 @@
-# Primary configuration
 server.port=8787
-
-# Fallback if other methods fail
 server.port=${SERVER_PORT:8686}
