@@ -12,7 +12,7 @@ function App() {
     <div style={{ padding: '20px', fontFamily: 'Arial' }}>
       <h1>📖 Blogger App</h1>
 
-      {/* Buttons to switch views */}
+      
       <div>
         <button onClick={() => setType('book')}>Show Book</button>
         <button onClick={() => setType('blog')}>Show Blog</button>
@@ -21,13 +21,13 @@ function App() {
 
       <hr />
 
-      {/* Method 1: If-Else using Ternary */}
+      
       <h3>Method 1: Ternary Operator</h3>
       {type === 'book' ? <BookDetails /> : type === 'blog' ? <BlogDetails /> : <CourseDetails />}
 
       <hr />
 
-      {/* Method 2: Logical AND (&&) */}
+      
       <h3>Method 2: Logical AND (&&)</h3>
       {type === 'book' && <BookDetails />}
       {type === 'blog' && <BlogDetails />}
@@ -35,7 +35,7 @@ function App() {
 
       <hr />
 
-      {/* Method 3: Using Variable to Hold JSX */}
+     
       <h3>Method 3: Variable Assignment</h3>
       {(() => {
         let content;
@@ -47,7 +47,7 @@ function App() {
 
       <hr />
 
-      {/* Method 4: Using Switch Statement */}
+      
       <h3>Method 4: Switch Case</h3>
       {
         (() => {
@@ -62,11 +62,11 @@ function App() {
 
       <hr />
 
-      {/* Method 5: Conditional Rendering Based on Auth Status */}
+      
       <h3>Method 5: Login Based</h3>
       {isLoggedIn ? <p>Welcome, logged-in user!</p> : <p>Please log in to continue.</p>}
 
-      {/* Method 6: Render Based on User Role */}
+      
       <h3>Method 6: Role Based</h3>
       {
         userRole === 'student' ? <CourseDetails /> :
